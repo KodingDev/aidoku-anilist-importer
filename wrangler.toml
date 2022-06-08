@@ -1,0 +1,5 @@
+name = "aidoku-anilist-importer"
+account_id = "ab2449bd777040e47f49f01ef6021e83"
+workers_dev = true
+compatibility_date = "2022-06-08"
+main = "src/index.ts"
