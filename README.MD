@@ -21,3 +21,10 @@ wrangler secret put API_KEY
  * `POST /` - Update Anilist using the Aidoku backup in the request body.
  * `GET /login` - Redirect to Anilist login page.
  * `GET /callback` - OAuth2 callback to define the user's Anilist account.
+
+## iOS Shortcut
+
+You can install the required iOS shortcut using the link below.
+This will require appropriate configuration.
+
+[Shortcut](https://www.icloud.com/shortcuts/7d303b108d9f4479bad3f1befc40c932)
