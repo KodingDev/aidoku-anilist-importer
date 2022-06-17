@@ -1,5 +1,14 @@
 name = "aidoku-anilist-importer"
 account_id = "ab2449bd777040e47f49f01ef6021e83"
 workers_dev = true
+node_compat = true
 compatibility_date = "2022-06-08"
 main = "src/index.ts"
+
+kv_namespaces = [
+    { binding = "KV", id = "7c72d0cca60344e9bffd7a4ed3c4b22c", preview_id = "fa0c77b7143a4894b4f6dee52be28e19" }
+]
+
+[vars]
+ANILIST_USERNAME = "Koding"
+ANILIST_REDIRECT_URI = "https://aidoku-anilist-importer.zerite.workers.dev/callback"

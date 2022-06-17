@@ -1,0 +1,12 @@
+{
+  "name": "AniList",
+  "schemaPath": "graphql.schema.json",
+  "extensions": {
+    "endpoints": {
+      "Unauthenticated": {
+        "url": "https://graphql.anilist.co",
+        "introspect": false
+      }
+    }
+  }
+}

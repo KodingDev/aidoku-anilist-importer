@@ -1,0 +1,50 @@
+query getSelf {
+    Viewer {
+        id
+        name
+    }
+}
+
+query getManga($id: Int!) {
+    MediaListCollection(type: MANGA, userId: $id) {
+        lists {
+            name
+            status
+
+            entries {
+                media {
+                    id
+                    title {
+                        romaji
+                        english
+                        native
+                    }
+                }
+
+                progress
+                progressVolumes
+                status
+            }
+        }
+    }
+}
+
+query search($query: String!) {
+    Media(search: $query, type: MANGA) {
+        id
+        title {
+            romaji
+            english
+            native
+        }
+    }
+}
+
+mutation setMangaProgress($id: Int!, $progress: Int!, $progressVolumes: Int!, $status: MediaListStatus) {
+    SaveMediaListEntry(mediaId: $id, progress: $progress, progressVolumes: $progressVolumes, status: $status) {
+        id
+        progress
+        progressVolumes
+        status
+    }
+}
